@@ -103,6 +103,8 @@ INSERT INTO Cart (order_number, order_date, total_price, customer_id)
 VALUES (1, '2023-12-07', 50000, 2);
 INSERT INTO Cart (order_number, order_date, total_price, customer_id)
 VALUES (1, '2023-12-09', 80000, 3);
+INSERT INTO Cart (order_number, order_date, total_price, customer_id)
+VALUES (2, '2023-12-25', 260000, 2);
 
 -- membuat tabel order_details
 CREATE TABLE Order_details(
@@ -118,4 +120,23 @@ CREATE TABLE Order_details(
 
 -- menambahkan data ke tabel Order_details
 INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
-VALUES (4, , 80000, 3);
+VALUES (4, 1, 50000, 1, 50000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (4, 2, 50000, 2, 100000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (4, 2, 50000, 2, 100000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (4, 1, 50000, 3, 50000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (3, 1, 80000, 4, 80000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (2, 1, 100000, 5, 100000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (1, 1, 100000, 5, 100000);
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (10, 2, 30000, 5, 60000);
+
+
+-- QUERY 1 pelanggan membeli 3 barang yang berbeda.
+SELECT * from cart
+Right join order_details ON order_details.order_id =cart.id where order_details.order_id=5;
