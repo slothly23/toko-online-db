@@ -1,0 +1,12 @@
+|id |name                    |description                    |price     |stock|category_id|
+|---|------------------------|-------------------------------|----------|-----|-----------|
+|1  |Tas kulit coklat        |Tas elegan berbahan kulit      |100000.000|10   |14         |
+|2  |Tas kulit hitam         |Tas elegan berbahan kulit      |100000.000|8    |14         |
+|3  |Tas ransel coklat       |Tas ransel kuat                |80000.000 |100  |14         |
+|4  |Baju bayi motif kaktus  |cocok untuk bayi usia 0-6 bulan|50000.000 |200  |13         |
+|5  |Kacamata hitam 2000     |Kacamata hitam gagang kuat     |150000.000|30   |8          |
+|6  |Sepatu pink elegan      |Sepatu elegan                  |120000.000|100  |5          |
+|7  |Sepatu ungu elegan      |Sepatu elegan                  |120000.000|10   |5          |
+|8  |Gamis katun lembut      |Gamis berbahan katun           |120000.000|10   |7          |
+|9  |Gamis katun corak lembut|Gamis berbahan katun           |170000.000|60   |7          |
+|10 |kerudung pasmina abu    |kerudung pasmina               |30000.000 |108  |7          |

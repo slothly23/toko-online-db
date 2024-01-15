@@ -1,0 +1,12 @@
+|id |name              |
+|---|------------------|
+|1  |Elektronik        |
+|5  |Sepatu            |
+|6  |Perlengkapan Rumah|
+|7  |Pakaian Perempuan |
+|8  |Aksesori          |
+|10 |Jam Tangan        |
+|11 |Otomotif          |
+|12 |Kesehatan         |
+|13 |Pakaian Bayi      |
+|14 |Tas               |
