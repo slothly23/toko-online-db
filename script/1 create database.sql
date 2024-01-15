@@ -140,3 +140,7 @@ VALUES (10, 2, 30000, 5, 60000);
 -- QUERY 1 pelanggan membeli 3 barang yang berbeda.
 SELECT * from cart
 Right join order_details ON order_details.order_id =cart.id where order_details.order_id=5;
+
+-- QUERY Melihat Kategori barang yang paling banyak barangnya.
+SELECT * from category 
+Right join product ON category.id=product.category_id order by product.stock desc limit 1;
