@@ -84,3 +84,38 @@ VALUES ('ani', 'ani@gmail.com', 'ui3hw5', '0812567906767', "jalan abc no 1", "Ja
 INSERT INTO Customer (name, email, _password, phone, adress, city)
 VALUES ('ana', 'ana@gmail.com', 'jlhui3hw5', '081256790690', "jalan abc no 8", "Depok");
 
+-- membuat tabel cart
+CREATE TABLE Cart(
+    id int not null primary key auto_increment,
+    order_number int not null,
+    order_date date,
+	total_price decimal(9,3),
+	customer_id int,
+	foreign key (customer_id) references customer(id)
+);
+
+-- menambahkan data ke tabel cart
+INSERT INTO Cart (order_number, order_date, total_price, customer_id)
+VALUES (1, '2023-12-05', 50000, 1);
+INSERT INTO Cart (order_number, order_date, total_price, customer_id)
+VALUES (2, '2023-12-05', 100000, 1);
+INSERT INTO Cart (order_number, order_date, total_price, customer_id)
+VALUES (1, '2023-12-07', 50000, 2);
+INSERT INTO Cart (order_number, order_date, total_price, customer_id)
+VALUES (1, '2023-12-09', 80000, 3);
+
+-- membuat tabel order_details
+CREATE TABLE Order_details(
+    id int not null primary key auto_increment,
+    product_id int,
+    product_quantity int,
+	product_price decimal(9,3),
+	order_id int,
+	sub_total decimal(9,3),
+	foreign key (product_id) references Product(id),
+	foreign key (order_id) references Cart(id)
+);
+
+-- menambahkan data ke tabel Order_details
+INSERT INTO Order_details (product_id, product_quantity, product_price, order_id, sub_total)
+VALUES (4, , 80000, 3);
