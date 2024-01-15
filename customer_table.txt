@@ -1,0 +1,5 @@
+|id |name |email          |_password|phone        |adress        |city         |
+|---|-----|---------------|---------|-------------|--------------|-------------|
+|1  |kinan|kinan@gmail.com|13hw5    |081256790999 |jalan abc no 1|Bandung      |
+|2  |ani  |ani@gmail.com  |ui3hw5   |0812567906767|jalan abc no 1|Jakarta Utara|
+|3  |ana  |ana@gmail.com  |jlhui3hw5|081256790690 |jalan abc no 8|Depok        |

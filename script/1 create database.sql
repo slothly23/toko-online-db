@@ -64,3 +64,23 @@ INSERT INTO Product (name, description, price, stock, category_id)
 VALUES ('Gamis katun corak lembut', 'Gamis berbahan katun', 170000, 60, 7);
 INSERT INTO Product (name, description, price, stock, category_id)
 VALUES ('kerudung pasmina abu', 'kerudung pasmina', 30000, 108, 7);
+
+-- membuat tabel customer
+CREATE TABLE Customer (
+    id int not null primary key auto_increment,
+    name varchar(50) not null,
+    email varchar(50),
+	_password varchar(50),
+	phone varchar(14),
+	adress varchar(255),
+	city varchar(50)
+);
+
+-- menambahkan data ke tabel customer
+INSERT INTO Customer (name, email, _password, phone, adress, city)
+VALUES ('kinan', 'kinan@gmail.com', '13hw5', '081256790999', "jalan abc no 1", "Bandung");
+INSERT INTO Customer (name, email, _password, phone, adress, city)
+VALUES ('ani', 'ani@gmail.com', 'ui3hw5', '0812567906767', "jalan abc no 1", "Jakarta Utara");
+INSERT INTO Customer (name, email, _password, phone, adress, city)
+VALUES ('ana', 'ana@gmail.com', 'jlhui3hw5', '081256790690', "jalan abc no 8", "Depok");
+
